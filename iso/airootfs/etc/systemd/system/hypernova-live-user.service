@@ -1,0 +1,11 @@
+[Unit]
+Description=Create the HyperNova live user
+Before=display-manager.service
+ConditionPathExists=!/home/nova
+
+[Service]
+Type=oneshot
+ExecStart=/usr/local/bin/hypernova-live-user
+
+[Install]
+WantedBy=multi-user.target

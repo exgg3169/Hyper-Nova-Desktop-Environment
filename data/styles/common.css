@@ -1,0 +1,56 @@
+/* Rules shared by every HyperNova shell surface and style. */
+
+#hn-taskbar button,
+#hn-menubar button,
+#hn-dock button,
+.hn-popup button {
+  background-image: none;
+  background-color: transparent;
+  border: none;
+  box-shadow: none;
+  text-shadow: none;
+  -gtk-icon-shadow: none;
+  min-height: 0;
+  min-width: 0;
+  outline: none;
+}
+
+#hn-desktop { background-color: #000000; }
+
+.hn-desktop-icon { padding: 4px; border-radius: 4px; }
+.hn-desktop-icon label {
+  color: #ffffff;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.95);
+  font-size: 12px;
+}
+.hn-desktop-icon.selected { background-color: rgba(80, 140, 255, 0.4); }
+
+.dim { opacity: 0.72; font-size: 0.88em; }
+.bold { font-weight: bold; }
+
+button.hn-tray-btn { padding: 0 5px; }
+.hn-battery { padding: 0 4px; }
+.hn-clock label { font-size: 12px; }
+.hn-popover-title { font-weight: bold; }
+
+.hn-search { min-height: 30px; }
+.hn-sep { opacity: 0.5; }
+
+.hn-popup button.hn-menu-app,
+.hn-popup button.hn-menu-app-small,
+.hn-popup button.hn-menu-link,
+.hn-popup button.hn-menu-link-bold,
+.hn-popup button.hn-footer-btn,
+.hn-popup button.hn-all-programs { padding: 4px 8px; border-radius: 3px; }
+
+.hn-menu-link-bold label { font-weight: bold; }
+
+.indicator { min-height: 3px; min-width: 3px; margin-top: 1px; }
+
+/* Shutdown / run dialogs */
+.hn-dialog { background-color: #f3f3f3; color: #1c1c1c; border: 1px solid #5a5a5a; }
+.hn-dialog-header { padding: 12px 18px; }
+.hn-dialog-title { font-size: 17px; font-weight: bold; }
+.hn-dialog-body { padding: 22px 26px; }
+.hn-dialog-footer { padding: 10px 16px; }
+button.hn-power-btn { padding: 10px 14px; }

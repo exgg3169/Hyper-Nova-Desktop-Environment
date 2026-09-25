@@ -1,0 +1,41 @@
+/* "Nova Mac": translucent menu bar, centred dock and Launchpad. */
+
+#hn-menubar { background-color: #ececec; color: #1d1d1f; border-bottom: 1px solid rgba(0, 0, 0, 0.12); }
+#hn-menubar.composited { background-color: rgba(246, 246, 246, 0.78); }
+#hn-menubar button { color: #1d1d1f; padding: 0 9px; border-radius: 5px; }
+#hn-menubar button:hover { background-color: rgba(0, 0, 0, 0.09); }
+#hn-menubar button.hn-nova-button { padding: 0 12px; }
+#hn-menubar .hn-appname label { font-weight: bold; }
+#hn-menubar label, #hn-menubar image { color: #1d1d1f; }
+#hn-menubar .hn-clock label { font-size: 13px; }
+
+#hn-dock { background-color: #3a3a3c; }
+#hn-dock.composited { background-color: transparent; }
+#hn-dock .hn-dock-box {
+  background-color: #d9d9dc;
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  border-radius: 18px;
+  padding: 5px 8px 2px 8px;
+}
+#hn-dock.composited .hn-dock-box { background-color: rgba(240, 240, 244, 0.45); }
+#hn-dock button.hn-dock-item { padding: 2px 3px; border-radius: 12px; }
+#hn-dock button.hn-dock-item image { -gtk-icon-transform: scale(1); transition: -gtk-icon-transform 120ms ease-out; }
+#hn-dock button.hn-dock-item:hover image { -gtk-icon-transform: scale(1.14); }
+#hn-dock button.hn-dock-item .indicator { min-width: 5px; min-height: 5px; border-radius: 3px; margin: 3px 0 0 0; }
+#hn-dock button.hn-dock-item.running .indicator { background-color: #1d1d1f; }
+#hn-dock .hn-dock-sep { background-color: rgba(0, 0, 0, 0.25); min-width: 1px; margin: 6px 2px; }
+
+#hn-launchpad { background-color: #1c1c28; color: #ffffff; }
+#hn-launchpad.composited { background-color: rgba(28, 28, 40, 0.8); }
+#hn-launchpad button.hn-lp-item { padding: 8px; border-radius: 14px; }
+#hn-launchpad button.hn-lp-item:hover { background-color: rgba(255, 255, 255, 0.12); }
+#hn-launchpad button.hn-lp-item label { color: #ffffff; text-shadow: 0 1px 3px rgba(0, 0, 0, 0.8); }
+#hn-launchpad entry.hn-search {
+  background-color: rgba(255, 255, 255, 0.18);
+  color: #ffffff;
+  border: 1px solid rgba(255, 255, 255, 0.25);
+  border-radius: 8px;
+  box-shadow: none;
+}
+
+.style-mac.hn-dialog { background-color: #ececec; border-radius: 12px; }

@@ -1,0 +1,24 @@
+#!/bin/sh
+# Starts a HyperNova X11 session: Openbox manages windows, the HyperNova
+# shell draws the desktop, taskbar/dock and menus.
+
+export XDG_CURRENT_DESKTOP=HyperNova
+export XDG_SESSION_DESKTOP=hypernova
+export DESKTOP_SESSION=hypernova
+
+# The shell is a single-instance D-Bus application; make sure a bus exists.
+if [ -z "$DBUS_SESSION_BUS_ADDRESS" ] && command -v dbus-run-session >/dev/null; then
+    exec dbus-run-session -- "$0" "$@"
+fi
+
+command -v xdg-user-dirs-update >/dev/null && xdg-user-dirs-update
+# A compositor gives the Aero/Mac styles their translucency and shadows.
+command -v picom >/dev/null && picom -b --backend xrender 2>/dev/null
+# Tapping Super alone opens the start menu (Openbox binds Ctrl+Esc to it).
+command -v xcape >/dev/null && xcape -e 'Super_L=Control_L|Escape'
+for agent in /usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1 /usr/bin/lxpolkit; do
+    if [ -x "$agent" ]; then "$agent" & break; fi
+done
+
+RC="$(hypernova-shell --write-openbox-config)"
+exec openbox --config-file "$RC" --startup "hypernova-shell"

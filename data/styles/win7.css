@@ -1,0 +1,79 @@
+/* "Aero 7": glass superbar, glowing orb, search-first start menu. */
+
+#hn-taskbar {
+  background-image: linear-gradient(to bottom, #3b5877, #1f3a57 45%, #142a42);
+  border-top: 1px solid rgba(255, 255, 255, 0.35);
+  color: #ffffff;
+}
+#hn-taskbar.composited {
+  background-image: linear-gradient(to bottom, rgba(70, 105, 140, 0.62), rgba(24, 48, 74, 0.72) 45%, rgba(12, 28, 46, 0.8));
+}
+#hn-taskbar button { color: #ffffff; }
+#hn-taskbar button.hn-start { padding: 0 8px; }
+#hn-taskbar button.hn-start:hover { background-color: rgba(120, 200, 255, 0.18); border-radius: 18px; }
+
+#hn-taskbar button.hn-task-icon { padding: 3px 12px 1px 12px; margin: 2px 1px; border-radius: 3px; }
+#hn-taskbar button.hn-task-icon.running {
+  background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0.22), rgba(255, 255, 255, 0.06));
+  border: 1px solid rgba(255, 255, 255, 0.35);
+}
+#hn-taskbar button.hn-task-icon.active {
+  background-image: linear-gradient(to bottom, rgba(180, 225, 255, 0.45), rgba(120, 180, 230, 0.18));
+}
+#hn-taskbar button.hn-task-icon:hover { background-color: rgba(140, 200, 255, 0.22); }
+#hn-taskbar button.hn-task-icon .indicator { min-height: 0; }
+
+.hn-tray { padding: 0 6px; }
+#hn-taskbar button.hn-showdesktop {
+  min-width: 14px;
+  border-left: 1px solid rgba(255, 255, 255, 0.35);
+  background-image: linear-gradient(to right, rgba(255, 255, 255, 0.12), rgba(255, 255, 255, 0.04));
+}
+#hn-taskbar button.hn-showdesktop:hover { background-color: rgba(255, 255, 255, 0.25); }
+
+/* Start menu */
+#hn-startmenu-7 {
+  background-image: linear-gradient(to bottom, #4a6f95, #203d5d 60%, #16304c);
+  border: 1px solid #0b1522;
+  border-radius: 7px;
+  padding: 9px;
+  color: #ffffff;
+}
+#hn-startmenu-7.composited {
+  background-image: linear-gradient(to bottom, rgba(90, 135, 180, 0.9), rgba(30, 62, 96, 0.93) 60%, rgba(18, 40, 66, 0.95));
+}
+#hn-startmenu-7 .hn-menu-left {
+  background-color: #ffffff;
+  color: #1e1e1e;
+  border: 1px solid #6c8aa8;
+  border-radius: 4px;
+  padding: 6px;
+}
+#hn-startmenu-7 .hn-menu-left button { color: #1e1e1e; }
+#hn-startmenu-7 .hn-menu-left button:hover {
+  background-image: linear-gradient(to bottom, #f1f7fe, #d6e8fc);
+  box-shadow: inset 0 0 0 1px #9ac4f0;
+}
+#hn-startmenu-7 .hn-menu-right { padding: 4px 4px 0 12px; }
+#hn-startmenu-7 .hn-menu-right button { color: #ffffff; }
+#hn-startmenu-7 .hn-menu-right button:hover {
+  background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0.28), rgba(255, 255, 255, 0.08));
+  box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.35);
+}
+#hn-startmenu-7 .hn-avatar { border: 3px solid rgba(255, 255, 255, 0.85); border-radius: 6px; background-color: #ffffff; }
+#hn-startmenu-7 .hn-category { color: #1e1e1e; padding: 2px 4px; }
+#hn-startmenu-7 entry.hn-search { background-color: #ffffff; color: #1e1e1e; border: 1px solid #8ba4be; border-radius: 3px; }
+#hn-startmenu-7 button.hn-shutdown,
+#hn-startmenu-7 button.hn-shutdown-more {
+  background-image: linear-gradient(to bottom, #6b8fb3, #36597d 50%, #28496b);
+  border: 1px solid #0f2236;
+  color: #ffffff;
+  padding: 4px 14px;
+}
+#hn-startmenu-7 button.hn-shutdown { border-radius: 3px 0 0 3px; }
+#hn-startmenu-7 button.hn-shutdown-more { border-radius: 0 3px 3px 0; border-left: none; padding: 4px 6px; }
+#hn-startmenu-7 button.hn-shutdown:hover,
+#hn-startmenu-7 button.hn-shutdown-more:hover { background-image: linear-gradient(to bottom, #8fb5dc, #4a79a8 50%, #36638f); }
+
+.style-win7.hn-dialog { background-image: linear-gradient(to bottom, #e9f1fa, #ffffff); }
+.style-win7 .hn-dialog-header { background-image: linear-gradient(to bottom, #4a6f95, #203d5d); color: #ffffff; }

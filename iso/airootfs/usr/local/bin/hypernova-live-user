@@ -1,0 +1,6 @@
+#!/bin/sh
+# Creates the password-less "nova" account used by the live session.
+set -e
+getent group autologin >/dev/null || groupadd -r autologin
+useradd -m -G wheel,audio,video,autologin -s /bin/bash -c "HyperNova" nova
+passwd -d nova
