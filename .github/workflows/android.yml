@@ -7,7 +7,14 @@ on:
     paths: ['android/**', '.github/workflows/android.yml']
   pull_request:
     paths: ['android/**', '.github/workflows/android.yml']
+  release:
+    types: [published]
   workflow_dispatch:
+    inputs:
+      release_tag:
+        description: 'Attach the output to this release tag, e.g. v0.1.0 (the tag and release are created if missing)'
+        required: false
+        default: ''
 
 permissions:
   contents: write
@@ -36,7 +43,9 @@ jobs:
           name: hypernova-launcher-apk
           path: android/hypernova-launcher.apk
       - name: Attach APK to the release
-        if: startsWith(github.ref, 'refs/tags/v')
+        if: startsWith(github.ref, 'refs/tags/v') || inputs.release_tag != ''
         uses: softprops/action-gh-release@v2
         with:
+          tag_name: ${{ inputs.release_tag || github.ref_name }}
+          name: HyperNova ${{ inputs.release_tag || github.ref_name }}
           files: android/hypernova-launcher.apk
