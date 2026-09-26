@@ -16,7 +16,7 @@ makedepends=('git')
 optdepends=(
   'picom: translucency and shadows for the Aero 7 and Mac styles'
   'xcape: open the start menu by tapping the Super key'
-  'pcmanfm-gtk3: file manager'
+  'pcmanfm: file manager'
   'lxterminal: terminal emulator'
   'mousepad: text editor'
   'networkmanager: network status in the tray'

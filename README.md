@@ -71,7 +71,7 @@ makepkg -si
 
 Paket `openbox`, `gtk3`, `libwnck3`, `python-gobject` ve `python-cairo`
 bağımlılıklarını kurar. Önerilen ek paketler: `picom` (Aero/Mac saydamlığı),
-`xcape` (tek başına Super tuşu), `pcmanfm-gtk3`, `lxterminal`, `mousepad`,
+`xcape` (tek başına Super tuşu), `pcmanfm`, `lxterminal`, `mousepad`,
 `networkmanager`, `wireplumber`, `lightdm-gtk-greeter`.
 
 Kurulumdan sonra giriş ekranında **HyperNova** oturumunu seçin ya da

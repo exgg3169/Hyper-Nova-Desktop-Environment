@@ -22,9 +22,10 @@ xdg-user-dirs
 hicolor-icon-theme
 adwaita-icon-theme
 polkit-gnome
+xcape
 
 # Our small default toolset
-pcmanfm-gtk3
+pcmanfm
 gvfs
 lxterminal
 mousepad
