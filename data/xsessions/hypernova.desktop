@@ -1,0 +1,8 @@
+[Desktop Entry]
+Name=HyperNova
+Comment=HyperNova masaüstü ortamı (XP, 7, 10 ve Mac stilleri)
+Exec=hypernova-session
+TryExec=hypernova-session
+Icon=hypernova
+Type=Application
+DesktopNames=HyperNova

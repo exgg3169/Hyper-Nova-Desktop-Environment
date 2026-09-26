@@ -1,0 +1,41 @@
+name: Desktop
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+  workflow_dispatch:
+
+jobs:
+  ubuntu:
+    name: Smoke test (Ubuntu)
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Install GTK, Wnck, Openbox and Xvfb
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y --no-install-recommends \
+            python3-gi python3-gi-cairo gir1.2-gtk-3.0 gir1.2-wnck-3.0 \
+            openbox xvfb dbus-x11 adwaita-icon-theme
+      - name: Run checks
+        run: make check PYTHON=/usr/bin/python3
+
+  arch:
+    name: Install + smoke test (Arch Linux)
+    runs-on: ubuntu-latest
+    container: archlinux:latest
+    steps:
+      - name: Install dependencies
+        run: |
+          pacman -Syu --noconfirm --needed make python python-gobject python-cairo gtk3 libwnck3 \
+            openbox dbus xorg-server-xvfb adwaita-icon-theme
+      - uses: actions/checkout@v4
+      - name: Run checks
+        run: make check PYTHON=python
+      - name: Install into a staging root
+        run: |
+          make install DESTDIR="$PWD/stage" PREFIX=/usr
+          test -x stage/usr/bin/hypernova-session
+          test -f stage/usr/share/xsessions/hypernova.desktop
+          test -f stage/usr/share/themes/HyperNova-XP/openbox-3/themerc

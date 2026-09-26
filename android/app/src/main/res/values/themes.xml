@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="Theme.HyperNova" parent="android:Theme.Material.NoActionBar">
+        <item name="android:windowBackground">@android:color/black</item>
+        <item name="android:statusBarColor">#33000000</item>
+        <item name="android:navigationBarColor">#FF101010</item>
+        <item name="android:windowShowWallpaper">false</item>
+    </style>
+
+    <style name="Theme.HyperNova.Settings" parent="android:Theme.Material.Light.DarkActionBar">
+        <item name="android:colorPrimary">#FF0063B1</item>
+        <item name="android:colorPrimaryDark">#FF004C8A</item>
+        <item name="android:colorAccent">#FF7C3AED</item>
+    </style>
+</resources>

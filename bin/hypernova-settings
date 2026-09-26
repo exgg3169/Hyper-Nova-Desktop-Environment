@@ -1,0 +1,5 @@
+#!/bin/sh
+# HyperNova Ayarları: style, wallpaper and taskbar preferences.
+export HYPERNOVA_DATA_DIR="${HYPERNOVA_DATA_DIR:-@DATADIR@}"
+export PYTHONPATH="@LIBDIR@${PYTHONPATH:+:$PYTHONPATH}"
+exec python3 -m hypernova settings "$@"

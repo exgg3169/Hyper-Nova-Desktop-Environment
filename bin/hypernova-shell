@@ -1,0 +1,6 @@
+#!/bin/sh
+# HyperNova shell: desktop, taskbar/dock and start menu of the session.
+# With an argument (--toggle-menu, --run, ...) it controls the running shell.
+export HYPERNOVA_DATA_DIR="${HYPERNOVA_DATA_DIR:-@DATADIR@}"
+export PYTHONPATH="@LIBDIR@${PYTHONPATH:+:$PYTHONPATH}"
+exec python3 -m hypernova "$@"

@@ -1,0 +1,43 @@
+# Packages added to Arch's releng profile for the HyperNova OS live image.
+
+# Graphical base
+xorg-server
+xorg-xinit
+xorg-xrandr
+xf86-input-libinput
+mesa
+lightdm
+lightdm-gtk-greeter
+
+# HyperNova desktop and its runtime
+openbox
+picom
+python
+python-gobject
+python-cairo
+gtk3
+libwnck3
+dbus
+xdg-user-dirs
+hicolor-icon-theme
+adwaita-icon-theme
+polkit-gnome
+xcape
+
+# Our small default toolset
+pcmanfm
+gvfs
+lxterminal
+mousepad
+firefox
+networkmanager
+network-manager-applet
+pipewire
+pipewire-pulse
+wireplumber
+
+# Fonts and Turkish locale
+noto-fonts
+noto-fonts-emoji
+ttf-dejavu
+glibc-locales

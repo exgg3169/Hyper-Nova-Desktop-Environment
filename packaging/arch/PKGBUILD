@@ -1,0 +1,45 @@
+# Maintainer: HyperNova OS <https://github.com/exgg3169/Hyper-Nova-Desktop-Environment>
+pkgname=hypernova-desktop-git
+_repo=Hyper-Nova-Desktop-Environment
+pkgver=0.1.0
+pkgrel=1
+pkgdesc="HyperNova desktop environment with XP, 7, 10 and Mac style shells on Openbox"
+arch=('any')
+url="https://github.com/exgg3169/${_repo}"
+license=('MIT')
+depends=(
+  'python' 'python-gobject' 'python-cairo'
+  'gtk3' 'libwnck3' 'openbox' 'dbus'
+  'xdg-user-dirs' 'hicolor-icon-theme' 'adwaita-icon-theme'
+)
+makedepends=('git')
+optdepends=(
+  'picom: translucency and shadows for the Aero 7 and Mac styles'
+  'xcape: open the start menu by tapping the Super key'
+  'pcmanfm: file manager'
+  'lxterminal: terminal emulator'
+  'mousepad: text editor'
+  'networkmanager: network status in the tray'
+  'wireplumber: volume control in the tray'
+  'polkit-gnome: authentication agent'
+  'lightdm-gtk-greeter: graphical login'
+)
+provides=('hypernova-desktop')
+conflicts=('hypernova-desktop')
+source=("${_repo}::git+${url}.git")
+sha256sums=('SKIP')
+
+pkgver() {
+  cd "${_repo}"
+  printf "0.1.0.r%s.%s" "$(git rev-list --count HEAD)" "$(git rev-parse --short HEAD)"
+}
+
+check() {
+  cd "${_repo}"
+  python -m compileall -q hypernova
+}
+
+package() {
+  cd "${_repo}"
+  make DESTDIR="${pkgdir}" PREFIX=/usr install
+}

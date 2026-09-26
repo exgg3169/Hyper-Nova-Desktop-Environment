@@ -1,0 +1,109 @@
+# HyperNova "Klasik XP" window theme: rounded Luna-blue title bars.
+border.width: 1
+padding.width: 4
+padding.height: 3
+window.handle.width: 3
+window.client.padding.width: 0
+window.client.padding.height: 0
+window.active.border.color: #0831d9
+window.inactive.border.color: #7b92e0
+window.active.client.color: #0a5cd8
+window.inactive.client.color: #7a96df
+
+window.active.title.bg: Raised Gradient SplitVertical
+window.active.title.bg.color: #0a5fe8
+window.active.title.bg.colorTo: #0048d4
+window.active.title.bg.color.splitTo: #3d95ff
+window.active.title.bg.colorTo.splitTo: #0054e3
+window.active.title.separator.color: #0831d9
+window.inactive.title.bg: Raised Gradient SplitVertical
+window.inactive.title.bg.color: #7a96df
+window.inactive.title.bg.colorTo: #6f88d9
+window.inactive.title.bg.color.splitTo: #a1b8f0
+window.inactive.title.bg.colorTo.splitTo: #7b92e0
+window.inactive.title.separator.color: #7b92e0
+
+window.active.label.bg: Parentrelative
+window.active.label.text.color: #ffffff
+window.inactive.label.bg: Parentrelative
+window.inactive.label.text.color: #d8e4f8
+window.label.text.justify: Left
+
+window.active.handle.bg: Flat Solid
+window.active.handle.bg.color: #0a5cd8
+window.active.grip.bg: Flat Solid
+window.active.grip.bg.color: #0a5cd8
+window.inactive.handle.bg: Flat Solid
+window.inactive.handle.bg.color: #7a96df
+window.inactive.grip.bg: Flat Solid
+window.inactive.grip.bg.color: #7a96df
+
+window.active.button.unpressed.bg: Raised Gradient Diagonal Border
+window.active.button.unpressed.bg.color: #5b9dff
+window.active.button.unpressed.bg.colorTo: #1f62dc
+window.active.button.unpressed.bg.border.color: #ffffff
+window.active.button.unpressed.image.color: #ffffff
+window.active.button.hover.bg: Raised Gradient Diagonal Border
+window.active.button.hover.bg.color: #7fb5ff
+window.active.button.hover.bg.colorTo: #3a7cf0
+window.active.button.hover.bg.border.color: #ffffff
+window.active.button.hover.image.color: #ffffff
+window.active.button.pressed.bg: Sunken Gradient Diagonal Border
+window.active.button.pressed.bg.color: #1a4fbf
+window.active.button.pressed.bg.colorTo: #3a7cf0
+window.active.button.pressed.bg.border.color: #ffffff
+window.active.button.pressed.image.color: #ffffff
+window.active.button.disabled.bg: Parentrelative
+window.active.button.disabled.image.color: #8fb0f0
+window.active.button.toggled.bg: Sunken Gradient Diagonal Border
+window.active.button.toggled.bg.color: #1a4fbf
+window.active.button.toggled.bg.colorTo: #3a7cf0
+window.active.button.toggled.bg.border.color: #ffffff
+window.active.button.toggled.image.color: #ffffff
+window.inactive.button.unpressed.bg: Raised Gradient Diagonal Border
+window.inactive.button.unpressed.bg.color: #a9bdf0
+window.inactive.button.unpressed.bg.colorTo: #7a96df
+window.inactive.button.unpressed.bg.border.color: #e8eefc
+window.inactive.button.unpressed.image.color: #e8eefc
+window.inactive.button.hover.bg: Raised Gradient Diagonal Border
+window.inactive.button.hover.bg.color: #bfd0f6
+window.inactive.button.hover.bg.colorTo: #8aa4e6
+window.inactive.button.hover.bg.border.color: #ffffff
+window.inactive.button.hover.image.color: #ffffff
+window.inactive.button.pressed.bg: Sunken Gradient Diagonal Border
+window.inactive.button.pressed.bg.color: #7a96df
+window.inactive.button.pressed.bg.colorTo: #a9bdf0
+window.inactive.button.pressed.bg.border.color: #ffffff
+window.inactive.button.pressed.image.color: #ffffff
+window.inactive.button.disabled.bg: Parentrelative
+window.inactive.button.disabled.image.color: #b8c8f0
+window.inactive.button.toggled.bg: Sunken Gradient Diagonal Border
+window.inactive.button.toggled.bg.color: #7a96df
+window.inactive.button.toggled.bg.colorTo: #a9bdf0
+window.inactive.button.toggled.bg.border.color: #ffffff
+window.inactive.button.toggled.image.color: #ffffff
+menu.border.width: 1
+menu.border.color: #0831d9
+menu.overlap.x: 0
+menu.overlap.y: 0
+menu.title.bg: Flat Solid
+menu.title.bg.color: #0a5cd8
+menu.title.text.color: #ffffff
+menu.title.text.justify: Left
+menu.items.bg: Flat Solid
+menu.items.bg.color: #ffffff
+menu.items.text.color: #000000
+menu.items.disabled.text.color: #9a9a9a
+menu.items.active.bg: Flat Solid
+menu.items.active.bg.color: #316ac5
+menu.items.active.text.color: #ffffff
+menu.separator.color: #b0b0b0
+osd.border.width: 1
+osd.border.color: #0831d9
+osd.bg: Flat Solid
+osd.bg.color: #ffffff
+osd.label.text.color: #000000
+osd.hilight.bg: Flat Solid
+osd.hilight.bg.color: #316ac5
+osd.unhilight.bg: Flat Solid
+osd.unhilight.bg.color: #ffffff

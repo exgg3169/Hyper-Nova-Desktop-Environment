@@ -1,0 +1,52 @@
+/* "Modern 10": flat dark taskbar, search box, list + live-tile start menu. */
+
+#hn-taskbar { background-color: #101010; color: #ffffff; }
+#hn-taskbar.composited { background-color: rgba(16, 16, 16, 0.92); }
+#hn-taskbar button { color: #ffffff; border-radius: 0; }
+#hn-taskbar button:hover { background-color: rgba(255, 255, 255, 0.1); }
+#hn-taskbar button.hn-start { padding: 0 16px; }
+#hn-taskbar button.hn-start:hover { color: #4cc2ff; }
+
+#hn-taskbar button.hn-taskbar-search { background-color: #f3f3f3; color: #4a4a4a; padding: 0 10px; }
+#hn-taskbar button.hn-taskbar-search:hover { background-color: #ffffff; }
+#hn-taskbar button.hn-taskbar-search label,
+#hn-taskbar button.hn-taskbar-search image { color: #4a4a4a; }
+
+#hn-taskbar button.hn-task-icon { padding: 6px 12px 0 12px; }
+#hn-taskbar button.hn-task-icon .indicator { margin: 4px 4px 0 4px; min-height: 2px; }
+#hn-taskbar button.hn-task-icon.running .indicator { background-color: #76b9ed; }
+#hn-taskbar button.hn-task-icon.active { background-color: rgba(255, 255, 255, 0.15); }
+#hn-taskbar button.hn-task-icon.active .indicator { background-color: #a6d8ff; margin: 4px 0 0 0; }
+
+.hn-tray { padding: 0 4px; }
+#hn-taskbar button.hn-showdesktop { min-width: 6px; border-left: 1px solid #5a5a5a; margin-left: 6px; }
+
+/* Start menu */
+#hn-startmenu-10 { background-color: #1f1f1f; color: #ffffff; }
+#hn-startmenu-10.composited { background-color: rgba(31, 31, 31, 0.96); }
+#hn-startmenu-10 button { color: #ffffff; border-radius: 0; }
+#hn-startmenu-10 button:hover { background-color: rgba(255, 255, 255, 0.1); }
+#hn-startmenu-10 .hn-menu-strip { background-color: #181818; padding: 4px 0; }
+#hn-startmenu-10 button.hn-strip-btn { padding: 12px 15px; }
+#hn-startmenu-10 .hn-menu-list { padding: 4px 6px; }
+#hn-startmenu-10 .hn-letter { padding: 10px 8px 2px 8px; font-weight: bold; }
+#hn-startmenu-10 .hn-menu-tiles { padding: 14px 16px; }
+#hn-startmenu-10 .hn-section-title { padding-bottom: 6px; }
+#hn-startmenu-10 entry.hn-search {
+  background-color: #2b2b2b;
+  color: #ffffff;
+  border: 1px solid #3c3c3c;
+  border-radius: 0;
+  box-shadow: none;
+}
+#hn-startmenu-10 button.hn-tile { padding: 6px; }
+#hn-startmenu-10 button.hn-tile:hover { box-shadow: inset 0 0 0 2px rgba(255, 255, 255, 0.55); }
+#hn-startmenu-10 button.tile-blue { background-color: #0063b1; }
+#hn-startmenu-10 button.tile-teal { background-color: #00828a; }
+#hn-startmenu-10 button.tile-purple { background-color: #6b42b8; }
+#hn-startmenu-10 button.tile-green { background-color: #107c10; }
+#hn-startmenu-10 button.tile-orange { background-color: #c75000; }
+#hn-startmenu-10 button.tile-red { background-color: #b4282e; }
+
+.style-win10.hn-dialog { background-color: #1f1f1f; color: #ffffff; border: 1px solid #3c3c3c; }
+.style-win10 .hn-dialog-header { background-color: #0063b1; }
