@@ -1,11 +1,14 @@
 name: HyperNova OS ISO
 
-# Building the ISO takes a while and needs a privileged container,
-# so it only runs on demand and for release tags.
+# Building the ISO takes a while and needs a privileged container, so it
+# only runs on demand, for release tags and when the ISO profile changes.
 on:
   workflow_dispatch:
   push:
+    branches: ['**']
     tags: ['v*']
+    # Path filters apply to branch pushes only; every v* tag builds the ISO.
+    paths: ['iso/**', '.github/workflows/iso.yml']
 
 permissions:
   contents: write

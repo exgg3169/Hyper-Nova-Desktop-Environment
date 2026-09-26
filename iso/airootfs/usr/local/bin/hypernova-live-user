@@ -2,5 +2,9 @@
 # Creates the password-less "nova" account used by the live session.
 set -e
 getent group autologin >/dev/null || groupadd -r autologin
-useradd -m -G wheel,audio,video,autologin -s /bin/bash -c "HyperNova" nova
+groups=autologin
+for group in wheel audio video network storage; do
+    getent group "$group" >/dev/null && groups="$groups,$group"
+done
+useradd -m -G "$groups" -s /bin/bash -c "HyperNova" nova
 passwd -d nova
